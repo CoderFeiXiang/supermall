@@ -47,5 +47,6 @@
     font-size: 12px;
     margin-top: 3px;
     color: #333;
+    text-align: center;
   }
 </style>

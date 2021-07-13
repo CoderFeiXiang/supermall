@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar">
+  <div id="nav-bar">
     <div class="left"><slot name="left"></slot></div>
     <div class="center"><slot name="center"></slot></div>
     <div class="right"><slot name="right"></slot></div>
@@ -7,13 +7,23 @@
 </template>
 
 <script>
-export default {
-name: "NavBar"
-}
+  export default {
+    name: "NavBar"
+  }
 </script>
 
 <style scoped>
-  .nav-bar {
+  #nav-bar {
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 10;*/
+
+    /*display: flex;*/
+
+    /*height: 44px;*/
+    /*line-height: 44px;*/
+    text-align: center;
+
     display: flex;
     /*不能直接设置line-height，要先设置line*/
     height: 44px;
@@ -27,6 +37,5 @@ name: "NavBar"
 
   .center {
     flex: 1;
-    text-align: center;
   }
 </style>
